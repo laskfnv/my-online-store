@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Online Predajňa</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
+        section { padding: 20px; }
+        .product { border-bottom: 1px solid #ddd; padding: 10px 0; }
+        .product img { max-width: 200px; }
+        .contact-form { max-width: 600px; margin: auto; }
+        form { display: flex; flex-direction: column; }
+        label, input, textarea, button { margin: 5px 0; }
+        button { padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vitajte v Mojej Online Predajni</h1>
+        <p>Ponúkame kvalitné produkty s vysokou maržou.</p>
+    </header>
+
+    <section>
+        <h2>Odporúčané Produkty</h2>
+        <div class="product">
+            <h3>Štýlová Nepremokavá Kozmetická Taška</h3>
+            <img src="https://via.placeholder.com/200" alt="Kozmetická Taška">
+            <p>Cena: €39.99</p>
+            <p>Štýlová a funkčná kozmetická taška, ideálna na organizovanie vašich make-up pomôcok. Je nepremokavá, čo ju robí perfektnou na cestovanie a každodenné použitie.</p>
+        </div>
+        <div class="product">
+            <h3>Termoska</h3>
+            <img src="https://via.placeholder.com/200" alt="Termoska">
+            <p>Cena: €28.49</p>
+            <p>Udržujte svoje nápoje horúce alebo studené celé hodiny s touto základnou termoskou. Perfektné pre turistov, kancelárskych pracovníkov a študentov.</p>
+        </div>
+        <div class="product">
+            <h3>Bambusové Zubné Kefky</h3>
+            <img src="https://via.placeholder.com/200" alt="Bambusová Zubná Kefka">
+            <p>Cena: €18.65</p>
+            <p>Ekologická alternatíva k tradičným plastovým zubným kefkám. Sú biologicky rozložiteľné, čo ich robí atraktívnymi pre ekologicky zmýšľajúcich spotrebiteľov.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Kontaktujte Nás</h2>
+        <form class="contact-form" action="/submit-form" method="post">
+            <label for="name">Meno:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Správa:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Odoslať</button>
+        </form>
+        <p>Email: <a href="mailto:Sammikhogaly@gmail.com">Sammikhogaly@gmail.com</a></p>
+        <p>Telefón: <a href="tel:+421950653239">+421 950 653 239</a></p>
+    </section>
+</body>
+</html>
